@@ -34,7 +34,7 @@ const contactSeeds = [
  * Initialize the Stuff collection if empty with seed data.
  */
 if (Contacts.find().count() === 0) {
-  _.each(contactsSeeds, function seedContacts(stuff) {
+  _.each(contactSeeds, function seedContacts(stuff) {
     Contacts.insert(stuff);
   });
 }
